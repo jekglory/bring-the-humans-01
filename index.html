@@ -76,12 +76,20 @@
   }
 
   @media (pointer: coarse) {
-    :root { --target: 44px; }
+    :root {
+      --target: 44px;
+    }
   }
 
-  *, *::before, *::after { box-sizing: border-box; }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-  html { -webkit-text-size-adjust: 100%; }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
 
   body {
     margin: 0;
@@ -122,8 +130,14 @@
     color: var(--ink);
   }
 
-  .brand svg { display: block; height: 32px; width: auto; }
-  .brand-dark { display: none; }
+  .brand svg {
+    display: block;
+    height: 32px;
+    width: auto;
+  }
+  .brand-dark {
+    display: none;
+  }
 
   @media (prefers-color-scheme: dark) {
     .brand-light { display: none; }
@@ -138,10 +152,16 @@
   }
 
   @media (max-width: 639px) {
-    .head-note { display: none; }
+    .head-note {
+      display: none;
+    }
   }
 
-  .main { flex: 1; display: grid; align-content: center; }
+  .main {
+    flex: 1;
+    display: grid;
+    align-content: center;
+  }
 
   .hero {
     display: grid;
@@ -162,7 +182,9 @@
     }
   }
 
-  .pitch { min-width: 0; }
+  .pitch {
+    min-width: 0;
+  }
 
   .kicker {
     margin: 0 0 var(--space-12);
@@ -188,7 +210,9 @@
     h1 { font-size: 52px; }
   }
 
-  p { text-wrap: pretty; }
+  p {
+    text-wrap: pretty;
+  }
 
   .lede {
     margin: var(--space-16) 0 0;
@@ -264,10 +288,18 @@
     transition: opacity var(--duration-quick) var(--ease-decelerate);
   }
 
-  .cta:hover { background: var(--accent-hover); }
-  .cta:focus-visible::after { opacity: 0.1; }
-  .cta:active { background: var(--accent-hover); }
-  .cta:active::after { opacity: 0.1; }
+  .cta:hover {
+    background: var(--accent-hover);
+  }
+  .cta:focus-visible::after {
+    opacity: 0.1;
+  }
+  .cta:active {
+    background: var(--accent-hover);
+  }
+  .cta:active::after {
+    opacity: 0.1;
+  }
 
   .fine {
     margin: var(--space-16) 0 0;
@@ -337,8 +369,12 @@
     background: var(--canvas);
   }
 
-  .pass-perf::before { left: -10px; }
-  .pass-perf::after { right: -10px; }
+  .pass-perf::before {
+    left: -10px;
+  }
+  .pass-perf::after {
+    right: -10px;
+  }
 
   .pass-link-label {
     margin: 0;
@@ -358,7 +394,9 @@
     overflow-wrap: anywhere;
   }
 
-  .pass-link:hover { text-decoration-color: var(--pass-text); }
+  .pass-link:hover {
+    text-decoration-color: var(--pass-text);
+  }
 
   .pass-note {
     margin: var(--space-16) 0 0;
@@ -400,7 +438,9 @@
     color: var(--secondary);
   }
 
-  .site-foot { padding-block: var(--space-8) var(--space-16); }
+  .site-foot {
+    padding-block: var(--space-8) var(--space-16);
+  }
 
   .site-foot p {
     margin: 0;
@@ -409,9 +449,13 @@
     color: var(--secondary);
   }
 
-  .site-foot a { color: inherit; }
+  .site-foot a {
+    color: inherit;
+  }
 
-  a { color: inherit; }
+  a {
+    color: inherit;
+  }
 
   :focus-visible {
     outline: 2px solid var(--accent);
